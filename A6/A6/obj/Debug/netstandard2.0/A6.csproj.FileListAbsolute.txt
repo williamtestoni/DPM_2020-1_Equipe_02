@@ -1,0 +1,14 @@
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\bin\Debug\netstandard2.0\A6.deps.json
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\bin\Debug\netstandard2.0\A6.dll
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\bin\Debug\netstandard2.0\ref\A6.dll
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\bin\Debug\netstandard2.0\A6.pdb
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\A6.csprojAssemblyReference.cache
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\A6.csproj.CoreCompileInputs.cache
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\A6.AssemblyInfoInputs.cache
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\A6.AssemblyInfo.cs
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\A6.dll
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\ref\A6.dll
+C:\Users\Willi\Documents\GitHub\DPM_2020-1_Equipe_02\A6\A6\obj\Debug\netstandard2.0\A6.pdb
