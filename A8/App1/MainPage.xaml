@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.MainPage"
+             Title="Geolocalização">
+
+    <StackLayout VerticalOptions="Center" Spacing="5">
+        <Label x:Name="lbGeolocalizacao" Text="" TextColor="Blue" HorizontalOptions="Center"/>
+        <Button x:Name="btGeolocalizacao" Text="Obter Geolocalização smartphone" TextColor="Black" 
+                Clicked="btGeolocalizacao_Clicked" />
+       <!-- <Button x:Name="btCoordenadasAtuais" Text="Coordenadas atuais" TextColor="Black" 
+                Clicked="btCoordenadasAtuais_Clicked" />-->
+        <Button x:Name="btMostrarPosicaoNoMapa" Text="Exibir mapa de rota" TextColor="Black" 
+                Clicked="btMostrarPosicaoNoMapa_Clicked" />
+        <Button x:Name="btMostrarPosicaoNoMapa2" Text="Exibir mapa normal" TextColor="Black" 
+                Clicked="btMostrarPosicaoNoMapa2_Clicked" />
+        <!--<Button x:Name="btMostrarPosicaoBarcelona" Text="Simular Barcelona" TextColor="Black" 
+                Clicked="btMostrarPosicaoBarcelona_Clicked" />
+        <Button x:Name="btMostrarPosicaoTokyo" Text="Simular Tokyo" TextColor="Black" 
+                Clicked="btMostrarPosicaoTokyo_Clicked" />-->
+        
+
+        <!-- Place new controls here 
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />-->
+    </StackLayout>
+
+</ContentPage>
