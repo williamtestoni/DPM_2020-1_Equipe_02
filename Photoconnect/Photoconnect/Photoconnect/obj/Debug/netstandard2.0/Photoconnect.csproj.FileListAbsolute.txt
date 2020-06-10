@@ -1,0 +1,17 @@
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\bin\Debug\netstandard2.0\Photoconnect.deps.json
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\bin\Debug\netstandard2.0\Photoconnect.dll
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\bin\Debug\netstandard2.0\ref\Photoconnect.dll
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\bin\Debug\netstandard2.0\Photoconnect.pdb
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.csprojAssemblyReference.cache
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.AssemblyInfoInputs.cache
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.AssemblyInfo.cs
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.dll
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\ref\Photoconnect.dll
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.pdb
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Pages\Login.xaml.g.cs
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\bin\Debug\netstandard2.0\Photoconnect.dll.config
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.csproj.App.config
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.csproj.CoreCompileInputs.cache
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\XamlC.stamp
