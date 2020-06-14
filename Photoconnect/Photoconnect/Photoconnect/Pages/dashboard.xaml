@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Photoconnect.Pages.dashboard"
+             Title="Dashboard">
+
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <Image x:Name="photoImage"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center"></Image>
+            
+            <Label Text="Bem vindo!"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Label x:Name="userNameLabel"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <Button x:Name="perfilButton"
+                    Text="Meu Perfil"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    >
+            </Button>
+
+            <Button x:Name="meusAgendamentosButton"
+                    Text="Meus agendamentos"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    >
+            </Button>
+
+            <Button x:Name="meusServicosButton"
+                    Text="Meus serviços"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    >
+            </Button>
+
+            <Button x:Name="agendarServicoButton"
+                    Text="Agendar serviço"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    >
+            </Button>
+
+            <Button x:Name="logoutButton"
+                    Text="Sair"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    >
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
