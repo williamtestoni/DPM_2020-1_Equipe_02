@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Photoconnect.Pages.Login"
-             Title="Login">
+             Title="Login"
+             BackgroundColor="#a8dadc">
 
     <ScrollView>
         <StackLayout Spacing="20">
@@ -13,12 +14,6 @@
                    VerticalOptions="Center" 
                    HorizontalOptions="Center">
             </Image>
-            <Label Text="Photoconnect"
-                    Font="30"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    FontAttributes="Bold">
-            </Label>
 
             <Entry x:Name="emailEntry"
                     Placeholder="E-mail"

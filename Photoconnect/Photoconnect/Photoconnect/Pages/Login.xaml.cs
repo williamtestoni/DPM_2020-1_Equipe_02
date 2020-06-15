@@ -28,10 +28,9 @@ namespace Photoconnect.Pages
         {
             base.OnAppearing();
 
-            photoLogo.Source = string.Format("http://159.203.107.218{0}", "/static/media/logo.0b6f1c8e.png");
-            photoLogo.WidthRequest = 200;
-            photoLogo.HeightRequest = 200;
-
+            photoLogo.Source = "http://159.203.107.218:3333/files/ddee8977f892a5d6b9e172de52d2d25d.PNG";
+            photoLogo.WidthRequest = 260;
+            photoLogo.HeightRequest = 260;
         }
 
         private async void LoginButton_Clicked(object sender, EventArgs e)
