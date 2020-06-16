@@ -7,6 +7,5 @@ namespace Photoconnect.Interfaces
         string DiretorioDB { get; }
         
         ISQLitePlatform Plataforma { get; }
-
     }
 }
