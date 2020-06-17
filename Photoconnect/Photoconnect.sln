@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photoconnect.Android", "Pho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photoconnect.iOS", "Photoconnect\Photoconnect.iOS\Photoconnect.iOS.csproj", "{B8B872BC-124F-4787-856F-BC6FFAC98FEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photoconnect", "Photoconnect\Photoconnect\Photoconnect.csproj", "{50803CE3-FBE0-4F5F-A023-A65D468CB354}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Photoconnect", "Photoconnect\Photoconnect\Photoconnect.csproj", "{50803CE3-FBE0-4F5F-A023-A65D468CB354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

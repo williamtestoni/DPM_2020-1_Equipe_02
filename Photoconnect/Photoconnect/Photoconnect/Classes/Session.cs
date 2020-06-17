@@ -1,10 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Runtime.Serialization;
 
 namespace Photoconnect.Classes
 {
     public partial class Session
     {
+        
         [JsonProperty("user")]
         public User User { get; set; }
 
@@ -54,6 +56,11 @@ namespace Photoconnect.Classes
 
         [JsonProperty("provider")]
         public bool Provider { get; set; }
+
+        public override int GetHashCode()
+        {
+            return (int)this.Id;
+        }
     }
 
     public partial class Avatar
@@ -67,4 +74,6 @@ namespace Photoconnect.Classes
         [JsonProperty("path")]
         public string Path { get; set; }
     }
+
+    
 }

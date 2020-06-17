@@ -30,7 +30,6 @@ item;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\40\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-resources;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\1\jl\res\values\strings.xml
 resources;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\40\jl\res\values\styles.xml
 resources;obj\Debug\90\res\values\colors.xml
 resources;obj\Debug\90\res\values\styles.xml
@@ -38,7 +37,6 @@ set;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\
 set;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\40\jl\res\anim\enterfromright.xml
 set;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\40\jl\res\anim\exittoleft.xml
 set;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\40\jl\res\anim\exittoright.xml
-string;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\1\jl\res\values\strings.xml
 style;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\40\jl\res\values\styles.xml
 style;obj\Debug\90\res\values\styles.xml
 translate;C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect.Android\obj\Debug\90\lp\40\jl\res\anim\enterfromleft.xml

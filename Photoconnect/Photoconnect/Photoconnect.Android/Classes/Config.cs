@@ -1,14 +1,12 @@
 ﻿using Photoconnect.Interfaces;
-using SQLite.Net.Interop;
 using Xamarin.Forms;
 
-[assembly : Dependency(typeof(Photoconnect.Droid.Classes.Config))]
+[assembly: Dependency(typeof(Photoconnect.Droid.Classes.Config))]
 namespace Photoconnect.Droid.Classes
 {
     public class Config : IConfig
     {
         private string diretorioDB;
-        private ISQLitePlatform plataforma;
 
         public string DiretorioDB 
         {
@@ -21,22 +19,6 @@ namespace Photoconnect.Droid.Classes
 
                 return diretorioDB;
             }
-            
         }
-
-        public ISQLitePlatform Plataforma
-        {
-            get
-            {
-                if (plataforma == null)
-                {
-                    plataforma = new SQLite.Net.Platform.XamarinAndroid.SQLitePlatformAndroid();
-                    
-                }
-                
-                return plataforma;
-            }
-
-        } 
     }
 }

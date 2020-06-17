@@ -97,8 +97,10 @@ namespace Photoconnect.Pages
 
             var sessionUser = JsonConvert.DeserializeObject<Session>(resp);
             sessionUser.password = passwordEntry.Text;
+
             waitActivityIndicator.IsRunning = false;
             await Navigation.PushAsync(new dashboard(sessionUser));
         }
+       
     }
 }

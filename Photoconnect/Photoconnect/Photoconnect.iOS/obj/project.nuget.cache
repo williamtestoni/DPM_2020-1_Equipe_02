@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "g2e1c5KfB8jbxRZQzxSD+Vv0UcVEI8L32E4BjGHcWuJajOLlIKl607zmu/rrqFex/dn6tp+QPQANrOlO9bCSsg==",
+  "dgSpecHash": "SLZigmPUlFI5iVPqRDPy+GLi7h5YtZ+6FNtFz3hi8aVjcmft5fREtI0AzajqhwLBNxjXz+qvPY2fBx+l/Kw6uQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\William Testoni\\Documents\\GitHub\\DPM_2020-1_Equipe_02\\Photoconnect\\Photoconnect\\Photoconnect.iOS\\Photoconnect.iOS.csproj",
   "expectedPackageFiles": [
@@ -10,8 +10,14 @@
     "C:\\Users\\William Testoni\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\William Testoni\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\William Testoni\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\William Testoni\\.nuget\\packages\\sqlite.net-pcl\\3.1.1\\sqlite.net-pcl.3.1.1.nupkg.sha512",
-    "C:\\Users\\William Testoni\\.nuget\\packages\\sqlite.net.core-pcl\\3.1.1\\sqlite.net.core-pcl.3.1.1.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\sqlitenetextensions\\2.1.0\\sqlitenetextensions.2.1.0.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.3\\sqlitepclraw.provider.dynamic_cdecl.2.0.3.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\William Testoni\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Users\\William Testoni\\.nuget\\packages\\xamarin.forms\\4.6.0.847\\xamarin.forms.4.6.0.847.nupkg.sha512"
   ],

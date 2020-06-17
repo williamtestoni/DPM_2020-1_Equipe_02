@@ -1,7 +1,6 @@
-﻿using Photoconnect.Pages;
-using System;
+﻿using Photoconnect.Classes;
+using Photoconnect.Pages;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Photoconnect
 {
