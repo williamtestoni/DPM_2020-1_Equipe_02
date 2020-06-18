@@ -45,7 +45,7 @@ namespace Photoconnect.Pages
 
             var updateRequest = new UpdateRequest
             {
-                avatar_id = 2,
+                avatar_id = 17,
                 name = nameEntry.Text,
                 email = emailEntry.Text,
                 phone_number = telefoneEntry.Text,
@@ -146,6 +146,9 @@ namespace Photoconnect.Pages
 
             if (this.sessaoUsuario.User.PhoneNumber != null)
                 telefoneEntry.Text = this.sessaoUsuario.User.PhoneNumber;
+
+            if (this.sessaoUsuario.password != null)
+                passwordAtualEntry.Text = this.sessaoUsuario.password;
         }
     }
 }
