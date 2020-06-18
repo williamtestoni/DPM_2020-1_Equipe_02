@@ -12,7 +12,7 @@
         public string state { get; set; }
         public string city { get; set; }
         public string neighborhood { get; set; }
-        public long zip_code { get; set; }
+        public string zip_code { get; set; }
         public string oldPassword { get; set; }
         public string password { get; set; }
         public string confirmPassword { get; set; }

@@ -58,7 +58,7 @@ namespace Photoconnect.Classes
         public string Neighborhood { get; set; }
 
         [JsonProperty("zip_code")]
-        public long? ZipCode { get; set; }
+        public string ZipCode { get; set; }
 
         [JsonProperty("provider")]
         public bool Provider { get; set; }

@@ -2,6 +2,7 @@
 using Photoconnect.Classes;
 using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -54,7 +55,7 @@ namespace Photoconnect.Pages
                 state = estadoEntry.Text,
                 city = cidadeEntry.Text,
                 neighborhood = bairroEntry.Text,
-                zip_code = long.Parse(cepEntry.Text),
+                zip_code = cepEntry.Text,
                 oldPassword = passwordAtualEntry.Text,
                 password = passwordNovoEntry.Text,
                 confirmPassword = passwordConfirmacaoEntry.Text,
@@ -68,8 +69,9 @@ namespace Photoconnect.Pages
             {
                 var client = new HttpClient();
                 client.BaseAddress = new Uri("http://159.203.107.218");
-                client.DefaultRequestHeaders.Add("token", sessaoUsuario.Token);
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessaoUsuario.Token);
                 var url = "/users";
+
                 var result = await client.PutAsync(url, httpContent);
 
                 if (!result.IsSuccessStatusCode)
