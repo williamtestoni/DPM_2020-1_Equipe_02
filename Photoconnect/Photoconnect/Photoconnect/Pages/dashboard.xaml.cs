@@ -16,6 +16,14 @@ namespace Photoconnect.Pages
             this.Padding = new Thickness(10, 20, 10, 10);
 
             this.sessaoUsuario = sessaoUsuario;
+
+            logoutButton.Clicked += LogoutButton_ClickedAsync;
+
+        }
+
+        private async void LogoutButton_ClickedAsync(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new Login());
         }
 
         protected override void OnAppearing()
