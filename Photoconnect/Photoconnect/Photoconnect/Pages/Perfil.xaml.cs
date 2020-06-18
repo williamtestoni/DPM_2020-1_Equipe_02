@@ -1,5 +1,8 @@
-﻿using Photoconnect.Classes;
+﻿using Newtonsoft.Json;
+using Photoconnect.Classes;
 using System;
+using System.Net.Http;
+using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -18,7 +21,82 @@ namespace Photoconnect.Pages
 
             this.sessaoUsuario = sessaoUsuario;
 
+            saveButton.Clicked += SaveButton_Clicked;
             voltarButton.Clicked += VoltarButton_Clicked;
+        }
+
+        private async void SaveButton_Clicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(nameEntry.Text))
+            {
+                await DisplayAlert("Atençao", "Insira um Nome", "Aceitar");
+                nameEntry.Focus();
+                return;
+            }
+
+            this.AtualizarUsuario(this.sessaoUsuario);
+        }
+
+        private async void AtualizarUsuario(Session sessaoUsuario)
+        {
+            waitActivityIndicator.IsRunning = true;
+            saveButton.IsEnabled = false;
+
+            var updateRequest = new UpdateRequest
+            {
+                avatar_id = 2,
+                name = nameEntry.Text,
+                email = emailEntry.Text,
+                phone_number = telefoneEntry.Text,
+                street = ruaEntry.Text,
+                street_number = long.Parse(numeroEntry.Text),
+                complement = complementoEntry.Text,
+                state = estadoEntry.Text,
+                city = cidadeEntry.Text,
+                neighborhood = bairroEntry.Text,
+                zip_code = long.Parse(cepEntry.Text),
+                oldPassword = passwordAtualEntry.Text,
+                password = passwordNovoEntry.Text,
+                confirmPassword = passwordConfirmacaoEntry.Text,
+            };
+
+            var jsonRequest = JsonConvert.SerializeObject(updateRequest);
+            var httpContent = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+            var resp = string.Empty;
+
+            try
+            {
+                var client = new HttpClient();
+                client.BaseAddress = new Uri("http://159.203.107.218");
+                client.DefaultRequestHeaders.Add("token", sessaoUsuario.Token);
+                var url = "/users";
+                var result = await client.PutAsync(url, httpContent);
+
+                if (!result.IsSuccessStatusCode)
+                {
+                    await DisplayAlert("Atenção", result.Content.ToString(), "Aceitar");
+                    waitActivityIndicator.IsRunning = false;
+                    saveButton.IsEnabled = true;
+
+                    return;
+                }
+
+                resp = await result.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Atenção", ex.Message, "Aceitar");
+                waitActivityIndicator.IsRunning = false;
+                saveButton.IsEnabled = true;
+
+                return;
+            }
+
+            waitActivityIndicator.IsRunning = false;
+            saveButton.IsEnabled = true;
+
+            var userResponse = JsonConvert.DeserializeObject<Session>(resp);
+            await Navigation.PushAsync(new dashboard(sessaoUsuario));
         }
 
         private async void VoltarButton_Clicked(object sender, EventArgs e)
@@ -46,8 +124,8 @@ namespace Photoconnect.Pages
             if (this.sessaoUsuario.User.Street != null)
                 ruaEntry.Text = this.sessaoUsuario.User.Street;
 
-            if (this.sessaoUsuario.User.StreetNumber != null)
-                numeroEntry.Text = this.sessaoUsuario.User.StreetNumber;
+            if (this.sessaoUsuario.User.StreetNumber.ToString() != null)
+                numeroEntry.Text = this.sessaoUsuario.User.StreetNumber.ToString();
 
             if (this.sessaoUsuario.User.Complement != null)
                 complementoEntry.Text = this.sessaoUsuario.User.Complement;
@@ -61,8 +139,8 @@ namespace Photoconnect.Pages
             if (this.sessaoUsuario.User.State != null)
                 estadoEntry.Text = this.sessaoUsuario.User.State;
 
-            if (this.sessaoUsuario.User.ZipCode != null)
-                cepEntry.Text = this.sessaoUsuario.User.ZipCode;
+            if (this.sessaoUsuario.User.ZipCode.ToString() != null)
+                cepEntry.Text = this.sessaoUsuario.User.ZipCode.ToString();
 
             if (this.sessaoUsuario.User.PhoneNumber != null)
                 telefoneEntry.Text = this.sessaoUsuario.User.PhoneNumber;

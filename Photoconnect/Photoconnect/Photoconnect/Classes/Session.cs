@@ -1,6 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Runtime.Serialization;
+using System;
+using System.Collections.Generic;
+
+using System.Globalization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Photoconnect.Classes
 {
@@ -37,7 +43,7 @@ namespace Photoconnect.Classes
         public string Street { get; set; }
 
         [JsonProperty("street_number")]
-        public string StreetNumber { get; set; }
+        public long? StreetNumber { get; set; }
 
         [JsonProperty("complement")]
         public string Complement { get; set; }
@@ -52,7 +58,7 @@ namespace Photoconnect.Classes
         public string Neighborhood { get; set; }
 
         [JsonProperty("zip_code")]
-        public string ZipCode { get; set; }
+        public long? ZipCode { get; set; }
 
         [JsonProperty("provider")]
         public bool Provider { get; set; }
