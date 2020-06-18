@@ -18,6 +18,7 @@ namespace Photoconnect.Pages
             this.Padding = new Thickness(10, 20, 10, 10);
 
             loginButton.Clicked += LoginButton_Clicked;
+            registerButton.Clicked += RegisterButton_Clicked;
         }
 
         protected override void OnAppearing()
@@ -56,6 +57,11 @@ namespace Photoconnect.Pages
             }
 
             this.Logar();
+        }
+
+        private async void RegisterButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
         }
 
         private async void Logar()

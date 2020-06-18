@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Photoconnect.Pages.RegisterPage"
+             Title="Cadastrar Usuário"
+             BackgroundColor="#a8dadc">
+
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="nameEntry"
+                       Placeholder="Nome Completo"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="emailEntry"
+                       Placeholder="E-mail"
+                       Keyboard="Email"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="passwordEntry"
+                       Placeholder="Senha"
+                       IsPassword="true"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <Button x:Name="saveButton"
+                    Text="Criar Conta"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
