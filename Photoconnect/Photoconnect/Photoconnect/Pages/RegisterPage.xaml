@@ -36,6 +36,11 @@
                 </Entry>
             </StackLayout>
 
+            <ActivityIndicator x:Name="waitActivityIndicator"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+            </ActivityIndicator>
+
             <Button x:Name="saveButton"
                     Text="Criar Conta"
                     BackgroundColor="Red"
