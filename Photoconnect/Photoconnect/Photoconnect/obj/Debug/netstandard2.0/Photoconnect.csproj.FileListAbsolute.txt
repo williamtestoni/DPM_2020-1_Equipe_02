@@ -17,3 +17,4 @@ C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Phot
 C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Photoconnect.csprojAssemblyReference.cache
 C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Pages\RegisterPage.xaml.g.cs
+C:\Users\William Testoni\Documents\GitHub\DPM_2020-1_Equipe_02\Photoconnect\Photoconnect\Photoconnect\obj\Debug\netstandard2.0\Pages\Perfil.xaml.g.cs

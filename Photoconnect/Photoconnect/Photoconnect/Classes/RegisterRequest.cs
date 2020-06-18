@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Photoconnect.Classes
+﻿namespace Photoconnect.Classes
 {
     class RegisterRequest
     {

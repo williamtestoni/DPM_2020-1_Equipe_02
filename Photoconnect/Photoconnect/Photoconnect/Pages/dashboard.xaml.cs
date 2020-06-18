@@ -17,8 +17,13 @@ namespace Photoconnect.Pages
 
             this.sessaoUsuario = sessaoUsuario;
 
+            perfilButton.Clicked += PerfilButton_Clicked;
             logoutButton.Clicked += LogoutButton_ClickedAsync;
+        }
 
+        private async void PerfilButton_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new Perfil(sessaoUsuario));
         }
 
         private async void LogoutButton_ClickedAsync(object sender, System.EventArgs e)

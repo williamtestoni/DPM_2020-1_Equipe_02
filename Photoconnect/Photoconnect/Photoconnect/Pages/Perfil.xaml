@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Photoconnect.Pages.Perfil"
+             Title="Perfil"
+             BackgroundColor="#a8dadc">
+    
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <Image x:Name="photoImage"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center">
+            </Image>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="nameEntry"
+                       Placeholder="Nome Completo"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="emailEntry"
+                       Placeholder="Seu endereço de E-mail"
+                       Keyboard="Email"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Endereço"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">             
+                <Entry x:Name="ruaEntry"
+                       Placeholder="Rua"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="numeroEntry"
+                       Placeholder="Número"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">   
+                <Entry x:Name="complementoEntry"
+                       Placeholder="Complemento"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">   
+                <Entry x:Name="bairroEntry"
+                       Placeholder="Bairro"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="cidadeEntry"
+                       Placeholder="Cidade"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="estadoEntry"
+                       Placeholder="Estado"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">   
+                <Entry x:Name="cepEntry"
+                       Placeholder="CEP"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">   
+                <Entry x:Name="telefoneEntry"
+                       Placeholder="Telefone"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Endereço"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+            </StackLayout>
+                
+            <StackLayout Orientation="Horizontal"> 
+                <Entry x:Name="passwordAtualEntry"
+                       Placeholder="Sua senha atual"
+                       IsPassword="true"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+                
+            <StackLayout Orientation="Horizontal"> 
+                <Entry x:Name="passwordNovoEntry"
+                       Placeholder="Nova senha"
+                       IsPassword="true"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+                
+            <StackLayout Orientation="Horizontal">   
+                <Entry x:Name="passwordConfirmacaoEntry"
+                       Placeholder="Confirmação de senha"
+                       IsPassword="true"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <ActivityIndicator x:Name="waitActivityIndicator"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+            </ActivityIndicator>
+
+            <Button x:Name="saveButton"
+                    Text="Atualizar Perfil"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand">
+            </Button>
+            
+            <Button x:Name="voltarButton"
+                    Text="Voltar"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand">
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
