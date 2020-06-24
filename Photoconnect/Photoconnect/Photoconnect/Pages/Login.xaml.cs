@@ -56,7 +56,13 @@ namespace Photoconnect.Pages
                 return;
             }
 
-            this.Logar();
+            var loginRequest = new LoginRequest
+            {
+                email = emailEntry.Text,
+                password = passwordEntry.Text,
+            };
+
+            this.Logar(loginRequest);
         }
 
         private async void RegisterButton_Clicked(object sender, EventArgs e)
@@ -64,15 +70,9 @@ namespace Photoconnect.Pages
             await Navigation.PushAsync(new RegisterPage());
         }
 
-        private async void Logar()
+        private async void Logar(LoginRequest loginRequest)
         {
             waitActivityIndicator.IsRunning = true;
-
-            var loginRequest = new LoginRequest
-            {
-                email = emailEntry.Text,
-                password = passwordEntry.Text,
-            };
 
             var jsonRequest = JsonConvert.SerializeObject(loginRequest);
             var httpContent = new StringContent(jsonRequest, Encoding.UTF8, "application/json");

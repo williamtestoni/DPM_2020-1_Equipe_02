@@ -27,6 +27,11 @@
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" />
 
+            <ActivityIndicator x:Name="waitActivityIndicator"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+            </ActivityIndicator>
+
             <Button x:Name="perfilButton"
                     Text="Meu Perfil"
                     BackgroundColor="#1d3557"

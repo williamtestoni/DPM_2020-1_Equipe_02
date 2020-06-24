@@ -43,9 +43,39 @@ namespace Photoconnect.Pages
             waitActivityIndicator.IsRunning = true;
             saveButton.IsEnabled = false;
 
+            string passwordNovo;
+            string passwordNovoConfirmacao;
+
+            if (passwordNovoEntry.Text != null)
+            {
+                passwordNovo = passwordNovoEntry.Text;
+            }
+            else
+            {
+                passwordNovo = passwordAtualEntry.Text;
+            }
+
+            if(passwordConfirmacaoEntry.Text != null)
+            {
+                passwordNovoConfirmacao = passwordConfirmacaoEntry.Text;
+            }
+            else
+            {
+                passwordNovoConfirmacao = passwordAtualEntry.Text;
+            }
+
+            if(passwordNovo != passwordNovoConfirmacao)
+            {
+                await DisplayAlert("Atenção", "Senha incorreta", "Aceitar");
+                waitActivityIndicator.IsRunning = false;
+                saveButton.IsEnabled = true;
+
+                return;
+            }
+
             var updateRequest = new UpdateRequest
             {
-                avatar_id = 17,
+                avatar_id = 2,
                 name = nameEntry.Text,
                 email = emailEntry.Text,
                 phone_number = telefoneEntry.Text,
@@ -57,8 +87,8 @@ namespace Photoconnect.Pages
                 neighborhood = bairroEntry.Text,
                 zip_code = cepEntry.Text,
                 oldPassword = passwordAtualEntry.Text,
-                password = passwordNovoEntry.Text,
-                confirmPassword = passwordConfirmacaoEntry.Text,
+                password = passwordNovo,
+                confirmPassword = passwordNovoConfirmacao,
             };
 
             var jsonRequest = JsonConvert.SerializeObject(updateRequest);
@@ -126,7 +156,7 @@ namespace Photoconnect.Pages
             if (this.sessaoUsuario.User.Street != null)
                 ruaEntry.Text = this.sessaoUsuario.User.Street;
 
-            if (this.sessaoUsuario.User.StreetNumber.ToString() != null)
+            if (this.sessaoUsuario.User.StreetNumber != null)
                 numeroEntry.Text = this.sessaoUsuario.User.StreetNumber.ToString();
 
             if (this.sessaoUsuario.User.Complement != null)
@@ -141,7 +171,7 @@ namespace Photoconnect.Pages
             if (this.sessaoUsuario.User.State != null)
                 estadoEntry.Text = this.sessaoUsuario.User.State;
 
-            if (this.sessaoUsuario.User.ZipCode.ToString() != null)
+            if (this.sessaoUsuario.User.ZipCode != null)
                 cepEntry.Text = this.sessaoUsuario.User.ZipCode.ToString();
 
             if (this.sessaoUsuario.User.PhoneNumber != null)
