@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static Photoconnect.Classes.Utilities;
 
 namespace Photoconnect.Pages
 {

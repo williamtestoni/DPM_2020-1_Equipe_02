@@ -41,8 +41,17 @@
                     >
             </Button>
 
+            <Button x:Name="agendarServicoButton"
+                    Text="Agendar serviço"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    >
+            </Button>
+
             <Button x:Name="meusAgendamentosButton"
-                    Text="Meus agendamentos"
+                    Text="Agendamentos"
                     BackgroundColor="#1d3557"
                     TextColor="White"
                     VerticalOptions="Center" 
@@ -52,15 +61,6 @@
 
             <Button x:Name="meusServicosButton"
                     Text="Meus serviços"
-                    BackgroundColor="#1d3557"
-                    TextColor="White"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="FillAndExpand"
-                    >
-            </Button>
-
-            <Button x:Name="agendarServicoButton"
-                    Text="Agendar serviço"
                     BackgroundColor="#1d3557"
                     TextColor="White"
                     VerticalOptions="Center" 

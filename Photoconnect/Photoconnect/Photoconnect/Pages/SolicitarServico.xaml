@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Photoconnect.Pages.SolicitarServico"
+             Title="Solicitar Serviço"
+             BackgroundColor="#a8dadc">
+
+    <ScrollView>
+        <StackLayout Spacing="10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Selecione a categoria:"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+            </StackLayout>
+            
+            <Picker x:Name="pcCategoria" HorizontalOptions="FillAndExpand" Title="Categoria">
+                <Picker.Items>
+                    <x:String>Aniversario(Adulto)</x:String>
+                    <x:String>Aniversario(Criança)</x:String>
+                    <x:String>Book</x:String>
+                    <x:String>Casamento</x:String>
+                    <x:String>Comercial</x:String>
+                    <x:String>Esportes</x:String>
+                    <x:String>Festa</x:String>
+                </Picker.Items>
+            </Picker>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Endereço do evento:"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="streetEntry"
+                       Placeholder="Rua"
+                       Keyboard="Email"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="street_numberEntry"
+                       Placeholder="Número"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" 
+                       Keyboard="Numeric">
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="cityEntry"
+                       Placeholder="Cidade"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="bairroEntry"
+                       Placeholder="Bairro"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Descrição:"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Editor Placeholder="Descrição do evento"
+                        WidthRequest="425"
+                        HeightRequest="250"/>
+            </StackLayout>
+
+
+            <ActivityIndicator x:Name="waitActivityIndicator"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+            </ActivityIndicator>
+
+            <Button x:Name="saveButton"
+                    Text="Solicitar serviço"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand">
+            </Button>
+
+            <Button x:Name="voltarButton"
+                    Text="Voltar"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand">
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

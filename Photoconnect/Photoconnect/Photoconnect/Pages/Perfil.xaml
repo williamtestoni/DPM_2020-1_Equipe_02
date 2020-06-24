@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              mc:Ignorable="d"
              x:Class="Photoconnect.Pages.Perfil"
              Title="Perfil"
@@ -52,7 +52,8 @@
                 <Entry x:Name="numeroEntry"
                        Placeholder="Número"
                        VerticalOptions="Start" 
-                       HorizontalOptions="FillAndExpand" >
+                       HorizontalOptions="FillAndExpand" 
+                       Keyboard="Numeric" >
                 </Entry>
             </StackLayout>
             
@@ -92,7 +93,8 @@
                 <Entry x:Name="cepEntry"
                        Placeholder="CEP"
                        VerticalOptions="Start" 
-                       HorizontalOptions="FillAndExpand" >
+                       HorizontalOptions="FillAndExpand" 
+                       Keyboard="Numeric" >
                 </Entry>
             </StackLayout>
             
@@ -100,12 +102,13 @@
                 <Entry x:Name="telefoneEntry"
                        Placeholder="Telefone"
                        VerticalOptions="Start" 
-                       HorizontalOptions="FillAndExpand" >
+                       HorizontalOptions="FillAndExpand" 
+                       Keyboard="Numeric">
                 </Entry>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="Endereço"
+                <Label Text="Senha"
                        FontSize="20"
                        HorizontalOptions="Start"
                        VerticalOptions="Center">
