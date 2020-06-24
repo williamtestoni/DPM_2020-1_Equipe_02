@@ -86,7 +86,6 @@
                         HeightRequest="250"/>
             </StackLayout>
 
-
             <ActivityIndicator x:Name="waitActivityIndicator"
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand">
