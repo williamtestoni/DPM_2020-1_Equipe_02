@@ -41,6 +41,15 @@
                     >
             </Button>
 
+            <Button x:Name="fotografosButton"
+                    Text="Fotógrafos"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="FillAndExpand"
+                    >
+            </Button>
+
             <Button x:Name="agendarServicoButton"
                     Text="Agendar serviço"
                     BackgroundColor="#1d3557"
@@ -51,7 +60,7 @@
             </Button>
 
             <Button x:Name="meusAgendamentosButton"
-                    Text="Agendamentos"
+                    Text="Serviços"
                     BackgroundColor="#1d3557"
                     TextColor="White"
                     VerticalOptions="Center" 

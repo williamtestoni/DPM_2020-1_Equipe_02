@@ -29,7 +29,59 @@
                     <x:String>Festa</x:String>
                 </Picker.Items>
             </Picker>
-            
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Data Inicial:"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+                
+                <DatePicker x:Name="dataInicial"
+                            MinimumDate="07/15/2020"
+                            MaximumDate="12/31/2025"
+                            Date="07/15/2020" 
+                            HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Data Final:"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+
+                <DatePicker x:Name="dataFinal"
+                            MinimumDate="07/15/2020"
+                            MaximumDate="12/31/2025"
+                            Date="07/15/2020" 
+                            HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Hora Inicial:"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+
+                <TimePicker x:Name="horaInicial"
+                            Time="00:00:00"
+                            Format="T"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Hora Final:"
+                       FontSize="20"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center">
+                </Label>
+
+                <TimePicker x:Name="horaFinal"
+                            Time="00:00:00"
+                            Format="T"/>
+            </StackLayout>
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="Endereço do evento:"
                        FontSize="20"
@@ -86,9 +138,31 @@
                         HeightRequest="250"/>
             </StackLayout>
 
-            <ActivityIndicator x:Name="waitActivityIndicator"
-                                HorizontalOptions="CenterAndExpand"
-                                VerticalOptions="CenterAndExpand">
+            
+
+            <StackLayout>
+                <Button x:Name="TirarFoto"
+                    Text="Tirar foto"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="Button_Clicked">
+                </Button>
+
+                <Button x:Name="btnSelecionarImagem"
+                    Text="Selecionar uma imagem"
+                    BackgroundColor="#1d3557"
+                    TextColor="White"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="btnSelecionarImagem_Clicked">
+                </Button>
+                
+                <Image x:Name="imgFoto"/>
+            </StackLayout>
+
+            <ActivityIndicator x:Name="waitActivityIndicator">
             </ActivityIndicator>
 
             <Button x:Name="saveButton"

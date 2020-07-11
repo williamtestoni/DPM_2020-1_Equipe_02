@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SLZigmPUlFI5iVPqRDPy+GLi7h5YtZ+6FNtFz3hi8aVjcmft5fREtI0AzajqhwLBNxjXz+qvPY2fBx+l/Kw6uQ==",
+  "dgSpecHash": "JnHZbsmcKMeS7RNRl+vb3WtX4SmgEZS6A8q+WCpl/kwqtcMbKp5SdCj9jiucTwOd8rODjAs/FdZjtlfd8vMz3Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\William Testoni\\Documents\\GitHub\\DPM_2020-1_Equipe_02\\Photoconnect\\Photoconnect\\Photoconnect.iOS\\Photoconnect.iOS.csproj",
   "expectedPackageFiles": [
@@ -18,8 +18,9 @@
     "C:\\Users\\William Testoni\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\William Testoni\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\William Testoni\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\William Testoni\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Users\\William Testoni\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\William Testoni\\.nuget\\packages\\xamarin.forms\\4.6.0.847\\xamarin.forms.4.6.0.847.nupkg.sha512"
+    "C:\\Users\\William Testoni\\.nuget\\packages\\xamarin.forms\\4.7.0.1080\\xamarin.forms.4.7.0.1080.nupkg.sha512"
   ],
   "logs": []
 }

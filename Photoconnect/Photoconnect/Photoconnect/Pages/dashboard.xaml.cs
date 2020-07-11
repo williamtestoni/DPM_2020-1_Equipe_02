@@ -28,7 +28,7 @@ namespace Photoconnect.Pages
 
         private async void AgendarServicoButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SolicitarServico());
+            await Navigation.PushAsync(new SolicitarServico(sessaoUsuario));
         }
 
         private async void PerfilButton_Clicked(object sender, System.EventArgs e)
