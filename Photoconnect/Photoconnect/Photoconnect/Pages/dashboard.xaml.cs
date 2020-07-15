@@ -22,8 +22,21 @@ namespace Photoconnect.Pages
             this.sessaoUsuario = sessaoUsuario;
 
             perfilButton.Clicked += PerfilButton_Clicked;
+            fotografosButton.Clicked += FotografosButton_Clicked;
             agendarServicoButton.Clicked += AgendarServicoButton_Clicked;
+            meusAgendamentosButton.Clicked += MeusAgendamentosButton_Clicked; 
             logoutButton.Clicked += LogoutButton_ClickedAsync;
+        }
+
+
+        private async void MeusAgendamentosButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Servicos());
+        }
+
+        private async void FotografosButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Fotografos());
         }
 
         private async void AgendarServicoButton_Clicked(object sender, EventArgs e)
