@@ -1,8 +1,12 @@
 ﻿
+using Newtonsoft.Json;
 using Photoconnect.Classes;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -32,6 +36,58 @@ namespace Photoconnect.Pages
 
         private async void SaveButton_Clicked(object sender, EventArgs e)
         {
+            waitActivityIndicator.IsRunning = true;
+
+            var solicitacaoRequest = new SolicitacaoRequest
+            {
+                EventType = (string)pcCategoria.SelectedItem,
+                Description = descriptionEditor.Text,
+                Street = streetEntry.Text,
+                StreetNumber = long.Parse(street_numberEntry.Text),
+                State = stateEntry.Text,
+                City = cityEntry.Text,
+                Neighborhood = bairroEntry.Text,
+                StartEvent = dataInicial.Date,
+                EndEvent = dataFinal.Date,
+            };
+
+            var jsonRequest = JsonConvert.SerializeObject(solicitacaoRequest);
+            var httpContent = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+            var resp = string.Empty;
+
+            try
+            {
+                var client = new HttpClient();
+                client.BaseAddress = new Uri("http://159.203.107.218");
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessaoUsuario.Token);
+                var url = "/services";
+
+                var result = await client.PutAsync(url, httpContent);
+
+                if (!result.IsSuccessStatusCode)
+                {
+                    await DisplayAlert("Atenção", result.Content.ToString(), "Aceitar");
+                    waitActivityIndicator.IsRunning = false;
+                    saveButton.IsEnabled = true;
+
+                    return;
+                }
+
+                resp = await result.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Atenção", ex.Message, "Aceitar");
+                waitActivityIndicator.IsRunning = false;
+                saveButton.IsEnabled = true;
+
+                return;
+            }
+
+            waitActivityIndicator.IsRunning = false;
+            saveButton.IsEnabled = true;
+
+            var userResponse = JsonConvert.DeserializeObject<Session>(resp);
             await Navigation.PushAsync(new dashboard(sessaoUsuario));
         }
 

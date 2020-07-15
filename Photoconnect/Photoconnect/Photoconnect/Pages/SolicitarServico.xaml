@@ -125,6 +125,14 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
+                <Entry x:Name="stateEntry"
+                       Placeholder="Estado"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="FillAndExpand" >
+                </Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
                 <Label Text="Descrição:"
                        FontSize="20"
                        HorizontalOptions="Start"
@@ -133,12 +141,11 @@
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Editor Placeholder="Descrição do evento"
+                <Editor x:Name="descriptionEditor"
+                        Placeholder="Descrição do evento"
                         WidthRequest="425"
                         HeightRequest="250"/>
             </StackLayout>
-
-            
 
             <StackLayout>
                 <Button x:Name="TirarFoto"
